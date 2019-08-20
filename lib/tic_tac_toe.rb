@@ -78,8 +78,8 @@ class TicTacToe
     end
   end
 
-  def full?(array)
-    array.all? do |spaces|
+  def full?
+    @board.all? do |spaces|
       if spaces == "X" || spaces == "O"
         true
       else
@@ -88,9 +88,9 @@ class TicTacToe
     end
   end
 
-  def draw?(array)
-    won = won?(array)
-    filled = full?(array)
+  def draw?
+    won = won?
+    filled = full?
     if won == nil && filled == true
       true
     elsif won.is_a?(Array) == true
@@ -100,18 +100,18 @@ class TicTacToe
     end
   end
 
-  def over?(array)
-    if draw?(array) == true || full?(array) == true || won?(array) != nil
+  def over?
+    if draw? == true || full? == true || won? != nil
       true
     else
       false
     end
   end
 
-  def winner(array)
-    victor = won?(array)
+  def winner
+    victor = won?
       if victor.is_a?(Array) == true
-        return array[victor[0]]
+        return @board[victor[0]]
       else
         nil
       end
