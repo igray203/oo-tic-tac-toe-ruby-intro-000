@@ -127,14 +127,14 @@ class TicTacToe
       end
   end
 
-# def play
-#   until over? == true
-#     turn
-#   end
-#   if won?.is_a?(Array) == true
-#     player = array[won?[0]]
-#     puts "Congratulations #{player}!"
-#   elsif draw? == true
-#     puts "Cat's Game!"
-#   end
-# end
+def play
+  until over? == true
+    turn
+  end
+  if won?.is_a?(Array) == true
+    player = array[won?[0]]
+    puts "Congratulations #{player}!"
+  elsif draw? == true
+    puts "Cat's Game!"
+  end
+end
