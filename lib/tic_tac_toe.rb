@@ -126,7 +126,7 @@ class TicTacToe
         nil
       end
   end
-  
+
   def play
     until over? == true
       turn
