@@ -25,13 +25,13 @@ class TicTacToe
     !(@board[index].nil? || @board[index] == " ")
   end
 
-  def valid_move?(array, index)
-    index.between?(0,8) && !position_taken?(array, index)
+  def valid_move?(index)
+    index.between?(0,8) && !position_taken?(index)
   end
 
-  def turn_count(board)
+  def turn_count
     counter = 0
-    board.each do |space|
+    @board.each do |space|
       if space == "X" || space == "O"
       counter += 1
       else
