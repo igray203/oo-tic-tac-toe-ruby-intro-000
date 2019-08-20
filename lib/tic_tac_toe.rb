@@ -132,7 +132,7 @@ def play
     turn
   end
   if won?.is_a?(Array) == true
-    player = array[won?[0]]
+    player = @boar[won?(@board)[0]]
     puts "Congratulations #{player}!"
   elsif draw? == true
     puts "Cat's Game!"
