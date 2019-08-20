@@ -132,7 +132,7 @@ def play
     turn
   end
   if won?.is_a?(Array) == true
-    player = won?[0]
+    player = "X"
     puts "Congratulations #{player}!"
   elsif draw? == true
     puts "Cat's Game!"
