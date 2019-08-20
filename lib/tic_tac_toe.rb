@@ -57,14 +57,6 @@ class TicTacToe
     else
       return "O"
     end
-
-
-    #   if
-    #     turns_count.even? == true
-    #   return "X"
-    # else
-    #   return "O"
-    # end
   end
 
   def turn(array)
