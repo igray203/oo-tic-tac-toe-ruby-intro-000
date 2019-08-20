@@ -126,7 +126,19 @@ class TicTacToe
         nil
       end
   end
-
-
-
+  
+  def play
+    until over? == true
+      turn
+    end
+    if won? == true
+      if current_player =="X"
+        puts "Congratulations O!"
+      else
+        puts "Congratulations X!"
+      end
+    elsif draw? == true
+      puts "Cat's Game!"
+    end
+  end
 end
