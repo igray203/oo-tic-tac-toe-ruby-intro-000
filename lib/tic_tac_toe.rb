@@ -44,7 +44,7 @@ class TicTacToe
     @board.count do |value|
       if (value == "X" || value =="O").even? == true
         return "X"
-      else 
+      else
         return "O"
       end
     end
