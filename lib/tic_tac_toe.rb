@@ -42,7 +42,8 @@ class TicTacToe
 
   def current_player
     @board.count do |value|
-      if (value == "X" || value =="O").even? == true
+      total = (value == "X" || value =="O")
+      if total.even? == true
         return "X"
       else
         return "O"
