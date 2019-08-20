@@ -51,11 +51,12 @@ class TicTacToe
       else
         nil
       end
-      if x_count == o_count
-        return "X"
-      else
-        return "O"
-      end
+    end
+    if x_count == o_count
+      return "X"
+    else
+      return "O"
+    end
 
 
     #   if
