@@ -43,8 +43,8 @@ class TicTacToe
   def current_player
     x_count = 0
     o_count = 0
-    @board.each do |value| 
-      if value == "X" 
+    @board.each do |value|
+      if value == "X"
         x_count += 1
       elsif value == "O"
         o_count += 1
@@ -56,8 +56,8 @@ class TicTacToe
       else
         return "O"
       end
-      
-      
+
+
     #   if
     #     turns_count.even? == true
     #   return "X"
