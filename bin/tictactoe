@@ -2,17 +2,6 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-def play
-  until over? == true
-    turn
-  end
-  if won? == true
-    if current_player =="X"
-      puts "Congratulations O!"
-    else
-      puts "Congratulations X!"
-    end
-  elsif draw? == true
-    puts "Cat's Game!"
-  end
-end
+puts "Welcome to Tic Tac Toe!"
+display_board
+play
