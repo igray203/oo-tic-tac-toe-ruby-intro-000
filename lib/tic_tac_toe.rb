@@ -41,9 +41,8 @@ class TicTacToe
   end
 
   def current_player(array)
-    turns_counted = turn_count(array)
       if
-        turns_counted.even? == true
+        turns_count.even? == true
       return "X"
     else
       return "O"
