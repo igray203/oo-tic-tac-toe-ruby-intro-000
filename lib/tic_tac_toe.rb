@@ -40,7 +40,7 @@ class TicTacToe
     return counter
   end
 
-  def current_player(array)
+  def current_player
       if
         turns_count.even? == true
       return "X"
@@ -53,7 +53,7 @@ class TicTacToe
     puts "Please enter 1-9:"
     input = gets
     index = input_to_index(input)
-    if valid_move?(array, index)
+    if valid_move?(index)
       move(array, index, current_player(array))
       display_board(array)
     else
